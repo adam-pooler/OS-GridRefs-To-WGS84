@@ -1,5 +1,7 @@
 # OS Grid Reference to WGS84 Conversion
 
+[![CI](https://github.com/adam-pooler/OS-GridRefs-To-WGS84/actions/workflows/on-push.yml/badge.svg)](https://github.com/adam-pooler/OS-GridRefs-To-WGS84/actions/workflows/on-push.yml)
+
 GPT-5 vibecoded conversion from UK Ordnance Survey Grid References to and from WGS84 coordinate system.
 
 No external script dependencies or API lookups.

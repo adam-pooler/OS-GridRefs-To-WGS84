@@ -15,7 +15,7 @@ bun install
 To run tests:
 
 ```bash
-bun run vitest
+bun run test
 ```
 
 To transpile TypeScript:

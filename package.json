@@ -1,19 +1,19 @@
 {
-  "name": "osgridrefstowgs84",
-  "version": "1.0.0",
-  "description": "Converts to and from OS Grid Refs and WGS84 coordinate systems",
-  "main": "index.js",
-  "scripts": {
-    "test": "test"
-  },
-  "author": "GPT5",
-  "license": "ISC",
-  "private": true,
-  "devDependencies": {
-    "@types/bun": "latest",
-    "vitest": "^3.2.4"
-  },
-  "peerDependencies": {
-    "typescript": "^5"
-  }
+    "name": "os-grid-refs-to-wgs-84",
+    "version": "0.1.0",
+    "description": "Converts to and from OS Grid Refs and WGS84 coordinate systems",
+    "main": "index.js",
+    "scripts": {
+        "test": "test"
+    },
+    "author": "GPT5",
+    "license": "ISC",
+    "private": true,
+    "devDependencies": {
+        "@types/bun": "latest",
+        "vitest": "^3.2.4"
+    },
+    "peerDependencies": {
+        "typescript": "^5"
+    }
 }

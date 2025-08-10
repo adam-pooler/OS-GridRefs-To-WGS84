@@ -2,6 +2,8 @@
 
 GPT-5 vibecoded conversion from UK Ordnance Survey Grid References to and from WGS84 coordinate system.
 
+No external script dependencies or API lookups.
+
 Share and enjoy.
 
 To install dependencies:

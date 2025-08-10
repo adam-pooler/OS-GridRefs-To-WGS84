@@ -4,11 +4,12 @@
   "description": "Converts to and from OS Grid Refs and WGS84 coordinate systems",
   "main": "index.js",
   "scripts": {
-    "format": "bun run prettier && bun run lint:fix",
+    "format": "bun run prettier && bun run lint",
+    "format:fix": "bun run prettier:fix && bun run lint:fix",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "prettier": "prettier --write .",
-    "prettier:check": "prettier --check .",
+    "prettier": "prettier --check .",
+    "prettier:fix": "prettier --write .",
     "test": "test"
   },
   "author": "GPT5",

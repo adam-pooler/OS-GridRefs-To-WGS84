@@ -4,6 +4,7 @@
   "description": "Converts to and from OS Grid Refs and WGS84 coordinate systems",
   "main": "index.js",
   "scripts": {
+    "build": "bun build ./src/index.ts --outdir ./dist --target bun",
     "format": "bun run prettier && bun run lint",
     "format:fix": "bun run prettier:fix && bun run lint:fix",
     "lint": "eslint .",

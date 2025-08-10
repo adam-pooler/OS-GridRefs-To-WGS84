@@ -1,4 +1,4 @@
-# OSGridRefsToWGS84
+# OS Grid Reference to WGS84 Conversion
 
 GPT-5 vibecoded conversion from UK Ordnance Survey Grid References to and from WGS84 coordinate system.
 

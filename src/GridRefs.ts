@@ -36,9 +36,8 @@ export function isValidOsGridRef(gridref: string) {
     const digits = s.slice(2);
     if (digits.length % 2 !== 0) return false;
     // Check valid grid letters (no I)
-    const lettersMap = "ABCDEFGHJKLMNOPQRSTUVWXYZ";
-    const l1 = lettersMap.indexOf(s.charAt(0));
-    const l2 = lettersMap.indexOf(s.charAt(1));
+    const l1 = GRID_LETTERS.indexOf(s.charAt(0));
+    const l2 = GRID_LETTERS.indexOf(s.charAt(1));
     if (l1 === -1 || l2 === -1) return false;
     return true;
 }

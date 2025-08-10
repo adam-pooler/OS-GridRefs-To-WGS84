@@ -1,5 +1,5 @@
 // First-principles implementation (Airy 1830 / Transverse Mercator inverse / Helmert inverse)
-// Uses OS constants and Helmert parameters from Ordnance Survey (see citations in message).
+// Uses OS constants and Helmert parameters from Ordnance Survey.
 
 // ---------- Helpers ----------
 const toRad = (d: number) => (d * Math.PI) / 180;

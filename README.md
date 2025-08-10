@@ -16,6 +16,12 @@ To run tests:
 bun run vitest
 ```
 
+To transpile TypeScript:
+
+```bash
+bun run tsc
+```
+
 To convert from OS Grid Reference to WGS84 latitude,longitude:
 
 ```

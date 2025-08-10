@@ -1,6 +1,6 @@
 {
   "name": "os-grid-refs-to-wgs-84",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Converts to and from OS Grid Refs and WGS84 coordinate systems",
   "main": "index.js",
   "scripts": {

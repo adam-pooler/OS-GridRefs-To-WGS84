@@ -38,7 +38,7 @@ jobs:
       - run: |
           export BUN_INSTALL="$HOME/.bun"
           export PATH="$BUN_INSTALL/bin:$PATH"
-          bun publish --access public
+          bun publish dist --access public
         shell: bash
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

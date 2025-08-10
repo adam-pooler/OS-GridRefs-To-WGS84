@@ -10,10 +10,20 @@ To install dependencies:
 bun install
 ```
 
-To run:
+To run tests:
 
 ```bash
-bun run index.js
+bun run vitest
 ```
 
-This project was created using `bun init` in bun v1.2.18. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+To convert from OS Grid Reference to WGS84 latitude,longitude:
+
+```
+const { lat, lon } = gridRefToWgs84("TL 44982 57869");
+```
+
+To convert from WGS84 latitude,longitude to OS Grid Reference:
+
+```
+const gridRef = wgs84ToGridRef(50.805547, -0.037451998);
+```

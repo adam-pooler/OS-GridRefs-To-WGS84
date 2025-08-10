@@ -10,20 +10,20 @@ import {
 
 describe("gridRefToWgs84", () => {
     const assertCalculatedValueCloseToExpectedValue = (
-        calculated: string,
+        gridRef: string,
         expected: { lat: number; lon: number },
         tolerance: number = 0.05
     ) => {
         // ---------- Self-test ----------
-        const got = gridRefToWgs84(calculated);
+        const got = gridRefToWgs84(gridRef);
         const dist = haversineMeters(
             expected.lat,
             expected.lon,
             got.lat,
             got.lon
         );
-        console.log("Sample grid ref:", calculated);
-        console.log("E/N parsed:", parseGridRef(calculated));
+        console.log("Sample grid ref:", gridRef);
+        console.log("E/N parsed:", parseGridRef(gridRef));
         console.log("Result (WGS84):", got);
         console.log("Expected (approx):", expected);
         console.log("Difference distance ≈", dist.toFixed(3), "m");
@@ -31,6 +31,12 @@ describe("gridRefToWgs84", () => {
 
         expect(dist).toBeLessThan(tolerance);
     };
+
+    test("lat lon object fields not null", () => {
+        const { lat, lon } = gridRefToWgs84("TL 44982 57869");
+        expect(lat).not.toBeNull();
+        expect(lon).not.toBeNull();
+    });
 
     test("TL 44982 57869", () => {
         assertCalculatedValueCloseToExpectedValue("TL 44982 57869", {
@@ -54,7 +60,7 @@ describe("gridRefToWgs84", () => {
     });
 });
 
-describe("gridRefToWgs84", () => {
+describe("isValidOsGridRef", () => {
     test("TL 44982 57869", () => {
         expect(isValidOsGridRef("TL 44982 57869")).toBe(true);
     });
@@ -71,7 +77,7 @@ describe("gridRefToWgs84", () => {
         expect(isValidOsGridRef("TQ")).toBe(false);
     });
 
-    test("empty", () => {
+    test("empty grid reference", () => {
         expect(isValidOsGridRef("")).toBe(false);
     });
 
